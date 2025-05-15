@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Пансионат Сары Челек</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto :wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      background-color: #f9fafb;
+      color: #1f2937;
+    }
+
+    header {
+      background: linear-gradient(to right, #1e40af, #3730a3);
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero {
+      background-image: url('https://picsum.photos/id/1018/1200/600 ');
+      background-size: cover;
+      background-position: center;
+      height: 24rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero div {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+      border-radius: 10px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .section {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #2563eb;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 9999px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #1d4ed8;
+    }
+
+    footer {
+      background-color: #111827;
+      color: #d1d5db;
+      text-align: center;
+      padding: 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1 class="text-3xl font-bold">Сары Челек</h1>
+    <nav>
+      <a href="#about">О нас</a>
+      <a href="#rooms">Номера</a>
+      <a href="#gallery">Галерея</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div>
+      <h2 class="text-4xl font-bold mb-4">Добро пожаловать в Сары Челек</h2>
+      <p class="text-xl">Уютный пансионат в живописном месте</p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section container">
+    <h2 class="text-3xl font-bold mb-6">О пансионате</h2>
+    <p class="max-w-3xl mx-auto text-lg leading-relaxed">
+      Пансионат "Сары Челек" расположен в живописном уголке природы, где сочетаются уют, комфорт и тишина.
+      Мы предлагаем современные номера, питание по домашнему, свежий воздух и возможность отдохнуть от городской суеты.
+      Здесь вы можете оставить заботы позади и наслаждаться красотой природы.
+    </p>
+  </section>
+
+  <!-- Rooms -->
+  <section id="rooms" class="section container">
+    <h2 class="text-3xl font-bold mb-6">Наши номера</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://picsum.photos/id/1015/600/400 " alt="Стандарт">
+        <div class="card-body">
+          <h3 class="text-xl font-semibold">Стандарт</h3>
+          <p class="text-blue-600 mt-2">от 3000 ₽/ночь</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/id/1016/600/400 " alt="Люкс">
+        <div class="card-body">
+          <h3 class="text-xl font-semibold">Люкс</h3>
+          <p class="text-blue-600 mt-2">от 6000 ₽/ночь</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/id/1017/600/400 " alt="VIP">
+        <div class="card-body">
+          <h3 class="text-xl font-semibold">VIP</h3>
+          <p class="text-blue-600 mt-2">от 10000 ₽/ночь</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="section container">
+    <h2 class="text-3xl font-bold mb-6">Фотогалерея</h2>
+    <div class="grid">
+      <img src="https://picsum.photos/id/1027/600/400 " alt="Галерея 1" class="rounded shadow hover:shadow-lg transition duration-300">
+      <img src="https://picsum.photos/id/1025/600/400 " alt="Галерея 2" class="rounded shadow hover:shadow-lg transition duration-300">
+      <img src="https://picsum.photos/id/1028/600/400 " alt="Галерея 3" class="rounded shadow hover:shadow-lg transition duration-300">
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section id="reviews" class="section container">
+    <h2 class="text-3xl font-bold mb-6">Отзывы гостей</h2>
+    <div class="grid">
+      <div class="card p-4">
+        <p>⭐⭐⭐⭐⭐</p>
+        <p class="italic">"Потрясающий отдых! Всё было на высшем уровне."</p>
+        <p class="mt-2 font-semibold">— Анна Иванова</p>
+      </div>
+      <div class="card p-4">
+        <p>⭐⭐⭐⭐</p>
+        <p class="italic">"Хорошие номера и очень вкусная еда. Немного шумновато вечером."</p>
+        <p class="mt-2 font-semibold">— Максим Петров</p>
+      </div>
+      <div class="card p-4">
+        <p>⭐⭐⭐⭐⭐</p>
+        <p class="italic">"Очень уютное место. Отличное обслуживание!"</p>
+        <p class="mt-2 font-semibold">— Елена Смирнова</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section container">
+    <h2 class="text-3xl font-bold mb-6">Контакты</h2>
+    <p class="mb-4">📍 Адрес: Республика Башкортостан, село Сары-Челек</p>
+    <p class="mb-4">📞 Телефон: +7 (900) 123-45-67</p>
+    <p class="mb-4">✉️ Email: sarychelok@example.com</p>
+    <a href="#" class="btn">Забронировать сейчас</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Пансионат «Сары Челек». Все права защищены.</p>
+  </footer>
+
+</body>
+</html>
